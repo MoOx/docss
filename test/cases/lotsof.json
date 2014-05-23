@@ -1,0 +1,6 @@
+[
+  "/**\n * Name\n *\n * Description\n * Still description\n *\n * .state: This is a state\n * .state - This is a another\n *\n * <markup>\n */",
+  "/**\n     * @description Description\n    * Still description\n    *\n    Name\n    *\n    * @state .state: This is a state\n\n    @markup <markup>\n    * <markup>\n    *\n    .another-state - This is a another\n    */",
+  "/**\nName\nDescription\nStill description\n:hover .state: State\n*/",
+  "/**\n * @name Name\n *\n * @description Description\n * Still description\n *\n * @state .state: This is a state\n * @state .another-state - This is a another\n *\n * @markup <markup>\n */"
+]

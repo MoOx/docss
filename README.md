@@ -37,7 +37,7 @@ This library can parse those kind of comment blocks
 
 ### Condensed block (KSS style)
 
-	/*
+	/**
 	Name
 	Description
 	Still description

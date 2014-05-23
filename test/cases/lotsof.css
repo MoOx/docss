@@ -1,0 +1,54 @@
+:root {
+  --blah: sha;
+}
+
+/**
+ * Name
+ *
+ * Description
+ * Still description
+ *
+ * .state: This is a state
+ * .state - This is a another
+ *
+ * <markup>
+ */
+
+.blah {}
+
+  .blah--sha {}
+
+    /**
+     * @description Description
+    * Still description
+    *
+    Name
+    *
+    * @state .state: This is a state
+
+    @markup <markup>
+    * <markup>
+    *
+    .another-state - This is a another
+    */
+    .indented-blah {}
+
+/**
+Name
+Description
+Still description
+:hover .state: State
+*/
+
+/**
+ * @name Name
+ *
+ * @description Description
+ * Still description
+ *
+ * @state .state: This is a state
+ * @state .another-state - This is a another
+ *
+ * @markup <markup>
+ */
+dontcare {}

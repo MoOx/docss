@@ -1,3 +1,10 @@
+"use strict";
+
+var findDocBlocks = require("./lib/find-docblocks")
+var parseDocBlock = require("./lib/parse-docblock")
+var split = require("./lib/split")
+var trim = require("./lib/trim")
+
 var StyleguideCSS = function(string, options) {
 
 	var docBlocks = findDocBlock(string)
@@ -13,22 +20,6 @@ var StyleguideCSS = function(string, options) {
 	}, parsedDockBlocks)
 
 	return parsedDockBlocks
-}
-
-function findDocBlock(string) {
-	var docBlocks = []
-
-	// @todo look for /** */ blocks
-
-	return docBlocks
-}
-
-function parseDocBlock(string) {
-	var docBlock = {}
-
-	// @todo parse comment block
-
-	return docBlock
 }
 
 module.exports = StyleguideCSS
