@@ -62,9 +62,9 @@ This library can parse those kind of comment blocks
 
 	/**
 	 * @description Description
-	* Still description
+	* Name
 	 *
-	Name
+	Still description
 	*
 	* @state .state: This is a state
 

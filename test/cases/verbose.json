@@ -1,1 +1,15 @@
-{}
+[{
+  "name": "Name",
+  "description": [
+    "Description",
+    "Still description"
+  ],
+  "states": {
+    ".another-state": "This is a another",
+    ".state": "This is a state"
+  },
+  "markup": [
+    "<markup>",
+    "<markup>"
+  ]
+}]

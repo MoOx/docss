@@ -6,7 +6,7 @@ var readFileSync = require("fs").readFileSync
 
 var styleguideCSS = require("../")
 
-test("it should return null if there is no interesting content", function(t) {
+test("it should return `null` if there is no interesting content", function(t) {
 
   t.equal(styleguideCSS(""), null, "returns empty object if empty string ")
 
@@ -17,8 +17,14 @@ test("it should return null if there is no interesting content", function(t) {
   t.end()
 })
 
-test("it should return an object if we have at least a comment block", function(t) {
-  t.equal(styleguideCSS(readFileSync("./test/cases/condensed.css", {encoding: "utf8"})), require("./test/cases/condensed.json"), "returns parsed data for condensed comment block")
+test("it should return corresponding objects if there is comment blocks", function(t) {
+  t.same(styleguideCSS(readFileSync("./test/cases/condensed.css", {encoding: "utf8"})),require("./cases/condensed.json"), "returns parsed data for condensed comment block")
+
+  t.same(styleguideCSS(readFileSync("./test/cases/expanded.css", {encoding: "utf8"})),require("./cases/expanded.json"), "returns parsed data for expanded comment block")
+
+  t.same(styleguideCSS(readFileSync("./test/cases/mixed.css", {encoding: "utf8"})),require("./cases/mixed.json"), "returns parsed data for mixed comment block")
+
+  t.same(styleguideCSS(readFileSync("./test/cases/verbose.css", {encoding: "utf8"})),require("./cases/verbose.json"), "returns parsed data for verbose comment block")
 
   t.end()
 })
