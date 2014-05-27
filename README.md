@@ -1,5 +1,7 @@
 # Styleguide CSS
 
+[![Build Status](http://img.shields.io/travis/MoOx/styleguide-css.svg?style=flat)](https://travis-ci.org/MoOx/styleguide-css)
+
 > A simple CSS styleguide generator
 
 
