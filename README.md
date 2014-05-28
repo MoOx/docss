@@ -1,6 +1,7 @@
-# {docss;}
+# ![{docss;}](logo/docss.png)
 
-[![Build Status](http://img.shields.io/travis/MoOx/docss.svg?style=flat)](https://travis-ci.org/MoOx/docss)
+[**WIP**] [![Build Status](http://img.shields.io/travis/MoOx/docss.svg?style=flat)](https://travis-ci.org/MoOx/docss)
+
 
 > A simple CSS styleguide generator, from docblocks
 
