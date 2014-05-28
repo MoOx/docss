@@ -2,7 +2,7 @@
 
 [![Build Status](http://img.shields.io/travis/MoOx/docss.svg?style=flat)](https://travis-ci.org/MoOx/docss)
 
-> A simple CSS styleguide generator from doc blocks
+> A simple CSS styleguide generator, from doc blocks
 
 ## Install
 
@@ -13,6 +13,12 @@
 ### docss(css)
 
 Return an new `Docss` instance for the given string of css.
+
+
+### Docss#use(fn)
+
+Use the given plugin `fn`. A docss "plugin" is simply a function accepting
+the docblocks array and `Docss` instance to apply transformation on it.
 
 ### Docss#toArray
 
@@ -38,7 +44,11 @@ Return an array containing all doc blocks with the structure below
 }]
 ```
 
----
+### Docss#toString
+
+Return the string representation of the docblocks.
+//@todo
+
 
 ## Possible Comment blocks
 

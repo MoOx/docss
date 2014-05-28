@@ -1,7 +1,7 @@
 {
   "name": "docss",
   "version": "0.0.0",
-  "description": "A simple CSS styleguide generator from doc blocks",
+  "description": "A simple CSS styleguide generator, from doc blocks",
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/.bin/tape test/*.js"
@@ -11,9 +11,12 @@
     "url": "https://github.com/MoOx/docss.git"
   },
   "keywords": [
-    "styleguide",
     "css",
-    "generator"
+    "styleguide",
+    "generator",
+    "doc",
+    "docs",
+    "docblocks"
   ],
   "author": "MoOx <m@moox.io>",
   "license": "MIT",

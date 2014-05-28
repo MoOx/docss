@@ -3,20 +3,49 @@
 var findDocBlocks = require("./lib/find-docblocks")
 var parseDocBlock = require("./lib/parse-docblock")
 
-var Docss = function(string, options) {
-  this.docs = []
-  this.docBlocks = findDocBlocks(string)
+function Docss(string, options) {
+  this.docblocks = []
 
-  this.docBlocks.forEach(function pushDocBlock(string) {
+  findDocBlocks(string).forEach(function pushDocBlock(string) {
     var doc = parseDocBlock(string)
     if (doc) {
       this.push(parseDocBlock(string))
     }
-	}, this.docs)
+	}, this.docblocks)
 }
 
+/**
+* Use the given plugin `fn(docblocks, docss)`.
+*
+* @param {Function} fn
+* @return {Docss}
+* @api public
+*/
+
+Docss.prototype.use = function(fn){
+  fn(this.docblocks, this)
+  return this
+}
+
+/**
+* Returns docblocks in an array
+*
+* @return {Array}
+* @api public
+*/
 Docss.prototype.toArray = function() {
-  return this.docs
+  return this.docblocks
+}
+
+/**
+* Stringify the docblocks.
+*
+* @param {Object} options
+* @return {String}
+* @api public
+*/
+Docss.prototype.toString = function(options) {
+  //@todo
 }
 
 function docss(string, options) {
