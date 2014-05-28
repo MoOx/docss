@@ -12,7 +12,7 @@ test("it should empty array if there is no interesting content", function(t) {
 
   t.same(docss(".test { prop: value }").toArray(), [], "returns empty object if no comment block ")
 
-  t.same(docss(readFileSync("./test/cases/nodocblock.css", {encoding: "utf8"})).toArray(), [], "returns parsed data for no doc blocks")
+  t.same(docss(readFileSync("./test/cases/nodocblock.css", {encoding: "utf8"})).toArray(), [], "returns parsed data for no docblocks")
 
   t.end()
 })

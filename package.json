@@ -1,7 +1,7 @@
 {
   "name": "docss",
   "version": "0.0.0",
-  "description": "A simple CSS styleguide generator, from doc blocks",
+  "description": "A simple CSS styleguide generator, from docblocks",
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/.bin/tape test/*.js"

@@ -2,7 +2,7 @@
 
 [![Build Status](http://img.shields.io/travis/MoOx/docss.svg?style=flat)](https://travis-ci.org/MoOx/docss)
 
-> A simple CSS styleguide generator, from doc blocks
+> A simple CSS styleguide generator, from docblocks
 
 ## Install
 
@@ -22,7 +22,7 @@ the docblocks array and `Docss` instance to apply transformation on it.
 
 ### Docss#toArray
 
-Return an array containing all doc blocks with the structure below
+Return an array containing all docblocks with the structure below
 
 ```js
 [{
