@@ -1,9 +1,18 @@
-# Styleguide CSS
+# {docss}
 
-[![Build Status](http://img.shields.io/travis/MoOx/styleguide-css.svg?style=flat)](https://travis-ci.org/MoOx/styleguide-css)
+[![Build Status](http://img.shields.io/travis/MoOx/docss.svg?style=flat)](https://travis-ci.org/MoOx/docss)
 
 > A simple CSS styleguide generator
 
+## Install
+
+  npm i docss
+
+## Usage
+
+
+
+---
 
 ## Possible Comment blocks
 

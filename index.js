@@ -3,7 +3,7 @@
 var findDocBlocks = require("./lib/find-docblocks")
 var parseDocBlock = require("./lib/parse-docblock")
 
-var StyleguideCSS = function(string, options) {
+var Docss = function(string, options) {
 
 	var docBlocks = findDocBlocks(string)
 	if (!docBlocks || !docBlocks.length) {
@@ -20,4 +20,4 @@ var StyleguideCSS = function(string, options) {
 	return parsedDockBlocks
 }
 
-module.exports = StyleguideCSS
+module.exports = Docss
