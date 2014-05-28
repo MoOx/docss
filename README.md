@@ -1,4 +1,4 @@
-# {docss}
+# {docss;}
 
 [![Build Status](http://img.shields.io/travis/MoOx/docss.svg?style=flat)](https://travis-ci.org/MoOx/docss)
 
