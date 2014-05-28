@@ -2,15 +2,41 @@
 
 [![Build Status](http://img.shields.io/travis/MoOx/docss.svg?style=flat)](https://travis-ci.org/MoOx/docss)
 
-> A simple CSS styleguide generator
+> A simple CSS styleguide generator from doc blocks
 
 ## Install
 
-  npm i docss
+    $ npm i docss
 
-## Usage
+## API
 
+### docss(css)
 
+Return an new `Docss` instance for the given string of css.
+
+### Docss#toArray
+
+Return an array containing all doc blocks with the structure below
+
+```js
+[{
+  "name": "Name",
+  "description": [
+    "lines",
+    "of",
+    "description"
+  ],
+  "states": {
+    ":hover": "state",
+    ".state": "another tate"
+  }
+  "markup": [
+    "<markup>",
+    "example",
+    "</markup>",
+  ]
+}]
+```
 
 ---
 
