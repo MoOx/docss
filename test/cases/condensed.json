@@ -6,5 +6,10 @@
   ],
   "states": {
     ":hover .state": "State"
-  }
+  },
+  "markup": [
+    "<markup>",
+    "  markup",
+    "</markup>"
+  ]
 }]

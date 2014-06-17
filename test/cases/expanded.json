@@ -8,5 +8,9 @@
     ".state": "This is a state",
     ".state": "This is a another"
   },
-  "markup": ["<markup>"]
+  "markup": [
+    "<markup>",
+    "  markup",
+    "</markup>"
+  ]
 }]
